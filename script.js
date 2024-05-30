@@ -4,7 +4,7 @@ function sortear(){
     const perguntas = {
         "HTML": "HTML.html",
         "FuteBol": "Futebol.html",
-        "Física": "FuteBol.html",
+        "Física": "fisica.html",
         "Edu-Física": "edufisica.html",
         "Raciocínio Lógico": "raciocinio.html"
     }

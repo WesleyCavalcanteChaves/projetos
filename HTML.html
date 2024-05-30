@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pontuação"></div>
+    <div id="per1"> 
+    <h1>A prmeira Pergunta:</h1>
+    <h2>Qual a função do html am uma pagina web?</h2>
+
+
+
+<button  id="errada" onclick="incorreta()">Quebras de linhas</button>
+<button  id="errada2" onclick="incorreta2()">Estiliar a pagina web</button>
+<button  id="errada3" onclick="incorreta3()">Dar espaço entre as palavras</button>
+<button  id="certa"  onclick="correta()">Estruturar a pagina web</button>
+
+</div>
+    <div id="per2">
+      <h1>test</h1>  
+</div>
+
+<script>
+    function correta(){
+        const certo = document.querySelector('#certa')
+        certo.style.background = 'green'
+        certo.style.color = 'white' 
+        certo.disabled = true
+
+    }
+    function incorreta(){
+        const errado = document.querySelector('#errada')
+        errado.style.background = 'red'
+        errado.style.color = 'white'
+        const certo = document.querySelector('#certa')
+        certo.style.background = 'green'
+        certo.style.color = 'white' 
+        errado.disabled = true
+
+    }
+    function incorreta2(){
+        const errado = document.querySelector('#errada2')
+        errado.style.background = 'red'
+        errado.style.color = 'white'
+        const certo = document.querySelector('#certa')
+        certo.style.background = 'green'
+        certo.style.color = 'white'
+        errado.disabled = true 
+    
+        }
+    function incorreta3(){
+        const errado = document.querySelector('#errada3')
+        errado.style.background = 'red'
+        errado.style.color = 'white'
+        const certo = document.querySelector('#certa')
+        certo.style.background = 'green'
+        certo.style.color = 'white' 
+        errado.disabled = true
+        
+            }
+</script>
+
+
+</form>
+</body>
+</html>
