@@ -9,14 +9,13 @@ function sortear(){
         "Raciocínio Lógico": "raciocinio.html"
     }
 
-    const sortear = Math.floor(Math.random() * categorias.length)
+    const sortear = Math.floor(Math.random() * categorias.length) 
     let sorteado = categorias[sortear]
     const direcionar = perguntas[sorteado]
     document.querySelector('#resu').innerHTML = sorteado
 
     const botao = document.querySelector('#Direcionar');
     botao.style.display = 'block'
-    botao.onclick = function(){
-        window.location.href = direcionar
+    botao.onclick = function(){ window.location.href = direcionar}
     }
-}
+
