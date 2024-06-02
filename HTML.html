@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .pagina {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        
+        button {
+                width: 400px;
+                padding: 18px;
+                border-left: 50px;
+                margin: 5px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;     
+                display: block;
+                margin: 0 auto;
+                transition: background-color 0.4s;
+            }
+
+                .per1 {
+                color:#ffff99;
+            }
+                .per2 {
+                color:#ffff99;
+            }
+                .per3 {
+                color:#ffff99;
+            }
+                .per4 {
+                    color:#ffff99;
+            }
+                .per5{
+                    color:#ffff99;
+            }
+            
+
+.per4_perguntas{
+
+    padding: 10px;
+
+
+
+}
+
+    </style>
 </head>
-<body>
+<body style="background-color:#6600cc;">
+    <div class="pagina">
     <div class="per1">   
     <h1>A primeira Pergunta:</h1>
     <h2>Qual a função do html am uma pagina web?</h2>
@@ -16,6 +69,7 @@
     <button  id="errada3" onclick="errada3()">Dar espaço entre as palavras</button><br>
     <button  id="certa" onclick="certa()">Estruturar a pagina web</button><br>
     <button  id="errada4" onclick="errada4()">Deixar o script interativo</button><br>
+
 
     <script>
 
@@ -32,6 +86,7 @@
             errada3.disabled = true
             errada4.disabled = true
             onclick = passar()
+            
         }
         
         function certa(){
@@ -329,14 +384,16 @@
 <div class="per4" style="display: none;">
 
     <h1>Pergunta 4:</h1>
-    <h2>Qual das opções a seguir é a maneira correta de criar um hiperlink que abre em uma nova aba no HTML?</h2>
+    <h2>Qual é a tag usada para definir um link em HTML?</h2>
 
-<button  id="errada42" onclick="errada42()">< a href="https://www.exemplo.com">Clique aqui< /a></button><br>
-<button  id="errada43" onclick="errada43()">< a href="https://www.exemplo.com" target="new">Clique aqui< /a></button><br>
-<button  id="certa3" onclick="certa3()">< a href="https://www.exemplo.com" target="_blank">Clique aqui< /a></button><br>
-<button  id="errada41" onclick="errada41()">< a href="https://www.exemplo.com" window="_blank">Clique aqui< /a></button><br>
-<button  id="errada44" onclick="errada44()">< link rel="stylesheet" href="https://www.exemplo.com" ></button>
+<div class="per4_perguntas">
 
+<button  id="errada42" onclick="errada42()">< link > - Usada para associar um documento a um recurso externo</button><br>
+<button  id="errada43" onclick="errada43()">< href > - Atributo usado dentro da tag < a > para especificar o destino do link.</button><br>
+<button  id="certa3" onclick="certa3()">< a > - Usada para criar links em HTML</button><br>
+<button  id="errada41" onclick="errada41()">< url > - usada para endereçar recursos </button><br>
+<button  id="errada44" onclick="errada44()">< src > - Atributo usado como uma imagem ou um script.</button>
+</div>
 
 
 <script>
@@ -534,7 +591,7 @@
 
 
 </div>
-
+</div>
 
 
 
