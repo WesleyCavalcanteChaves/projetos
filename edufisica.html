@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="per1">   
+    <h1>(1):</h1>
+    <h2>Qual das seguintes funções é desempenhada pelo músculo masseter?</h2>
+    
+    <button  id="errada" onclick="errada()">Flexão do cotovelo</button><br>
+    <button  id="certa" onclick="certa()">Elevação da mandíbula</button><br>
+    <button  id="errada3" onclick="errada3()">Abdução do ombro</button><br>
+    <button  id="errada2" onclick="errada2()">Rotação do tronco</button><br>
+
+    <script>
+
+    
+        function parar(){
+            const certa = document.querySelector('#certa')
+            const errada = document.querySelector('#errada')
+            const errada2 = document.querySelector('#errada2')
+            const errada3 = document.querySelector('#errada3')
+            certa.disabled = true
+            errada.disabled = true
+            errada2.disabled = true
+            errada3.disabled = true
+            onclick = passar()
+        }
+        
+        function certa(){
+            const certa = document.querySelector('#certa')
+            certa.onclick = parar()
+            certa.style.background = 'green'
+            certa.style.color = 'white'
+            
+        }
+    
+        function errada(){
+            const errada = document.querySelector('#errada')
+            const certa = document.querySelector('#certa')
+            errada.onclick = parar()
+            errada.style.background = 'red'
+            certa.style.background = 'green'
+            errada.style.color = 'white'
+            certa.style.color = 'white'
+        }
+        
+    
+        function errada2(){
+            const errada2 = document.querySelector('#errada2')
+            const certa = document.querySelector('#certa')
+            errada2.onclick = parar()
+            errada2.style.background = 'red'
+            certa.style.background = 'green'
+            errada2.style.color = 'white'
+            certa.style.color = 'white'
+        }
+    
+        function errada3(){
+            const errada3 = document.querySelector('#errada3')
+            const certa = document.querySelector('#certa')
+            errada3.onclick = parar()
+            errada3.style.background = 'red'
+            certa.style.background = 'green'
+            errada3.style.color = 'white'
+            certa.style.color = 'white'
+        }
+        
+    
+        function passar(){
+    
+            setTimeout(function(){
+                const per2 = document.querySelector('.per2')
+                per2.style.display = 'block'
+    
+    
+    
+            },2000)
+    
+    
+    
+        }
+    
+    
+    
+    
+    </script>
+
+
+</div> 
+
+
+
+<div class="per2" style="display: none;">
+
+    <h1>(2):</h1>
+    <h2>Qual das seguintes funções é desempenhada pelo músculo deltóide?</h2>
+
+<button  id="errada21" onclick="errada21()">Flexão do quadril</button><br>
+<button  id="errada22" onclick="errada22()">Extensão do joelho</button><br>
+<button  id="errada23" onclick="errada23()">Rotação do tornozelo</button><br>
+<button  id="certa1" onclick="certa1()">Abdução do braço</button><br>
+
+
+<script>
+
+    
+    function parar1(){
+        const certa1 = document.querySelector('#certa1')
+        const errada21 = document.querySelector('#errada21')
+        const errada22 = document.querySelector('#errada22')
+        const errada23 = document.querySelector('#errada23')
+        certa1.disabled = true
+        errada21.disabled = true
+        errada22.disabled = true
+        errada23.disabled = true
+        onclick = passar1()
+    }
+    
+    function certa1(){
+        const certa1 = document.querySelector('#certa1')
+        certa1.onclick = parar1()
+        certa1.style.background = 'green'
+        certa1.style.color = 'white'
+        
+    }
+
+    function errada21(){
+        const errada21 = document.querySelector('#errada21')
+        const certa1 = document.querySelector('#certa1')
+        errada21.onclick = parar1()
+        errada21.style.background = 'red'
+        certa1.style.background = 'green'
+        errada21.style.color = 'white'
+        certa1.style.color = 'white'
+    }
+    
+
+    function errada22(){
+        const errada22 = document.querySelector('#errada22')
+        const certa1 = document.querySelector('#certa1')
+        errada22.onclick = parar1()
+        errada22.style.background = 'red'
+        certa1.style.background = 'green'
+        errada22.style.color = 'white'
+        certa1.style.color = 'white'
+    }
+
+    function errada23(){
+        const errada23 = document.querySelector('#errada23')
+        const certa1 = document.querySelector('#certa1')
+        errada23.onclick = parar1()
+        errada23.style.background = 'red'
+        certa1.style.background = 'green'
+        errada23.style.color = 'white'
+        certa1.style.color = 'white'
+        
+    }
+    
+
+    function passar1(){
+
+        setTimeout(function(){
+            const per3 = document.querySelector('.per3')
+            per3.style.display = 'block'
+
+
+
+
+        },2000)
+
+
+
+    }
+
+
+
+
+</script>
+
+
+
+</div>
+
+<div class="per3" style="display: none;">
+
+    <h1>(3):</h1>
+    <h2>Qual das seguintes atividades físicas é considerada um exercício de resistência muscular?</h2>
+
+<button  id="errada32" onclick="errada32()">Sprint de 100 metros</button><br>
+<button  id="errada33" onclick="errada33()">Caminhada leve</button><br>
+<button  id="certa2" onclick="certa2()">Treinamento com elásticos</button><br>
+<button  id="errada31" onclick="errada31()">Meditação</button><br>
+
+
+<script>
+
+    
+    function parar3(){
+        const certa2 = document.querySelector('#certa2')
+        const errada31 = document.querySelector('#errada31')
+        const errada32 = document.querySelector('#errada32')
+        const errada33 = document.querySelector('#errada33')
+        certa2.disabled = true
+        errada31.disabled = true
+        errada32.disabled = true
+        errada33.disabled = true
+        onclick = passar2()
+    }
+    
+    function certa2(){
+        const certa2 = document.querySelector('#certa2')
+        certa2.onclick = parar3()
+        certa2.style.background = 'green'
+        certa2.style.color = 'white'
+        
+    }
+
+    function errada31(){
+        const errada31 = document.querySelector('#errada31')
+        const certa2 = document.querySelector('#certa2')
+        errada31.onclick = parar3()
+        errada31.style.background = 'red'
+        certa2.style.background = 'green'
+        errada31.style.color = 'white'
+        certa2.style.color = 'white'
+    }
+    
+
+    function errada32(){
+        const errada32 = document.querySelector('#errada32')
+        const certa2 = document.querySelector('#certa2')
+        errada32.onclick = parar3()
+        errada32.style.background = 'red'
+        certa2.style.background = 'green'
+        errada32.style.color = 'white'
+        certa2.style.color = 'white'
+    }
+
+    function errada33(){
+        const errada33 = document.querySelector('#errada33')
+        const certa2 = document.querySelector('#certa2')
+        errada33.onclick = parar3()
+        errada33.style.background = 'red'
+        certa2.style.background = 'green'
+        errada33.style.color = 'white'
+        certa2.style.color = 'white'
+        
+    }
+    
+
+    function passar2(){
+
+        setTimeout(function(){
+            const per4 = document.querySelector('.per4')
+            per4.style.display = 'block'
+
+
+
+        },2000)
+
+
+
+    }
+
+
+
+
+</script>
+
+
+
+</div>
+
+<div class="per4" style="display: none;">
+
+    <h1>Pergunta 4:</h1>
+    <h2>Qual das seguintes máquinas de academia é mais indicada para trabalhar os músculos do peitoral?</h2>
+
+<button  id="errada42" onclick="errada42()">Peck Deck - Dorsal</button><br>
+<button  id="errada43" onclick="errada43()">leg Press</button><br>
+<button  id="certa3" onclick="certa3()">Crucifixo</button><br>
+<button  id="errada41" onclick="errada41()">Remada Cavalo</button>
+
+
+<script>
+
+    
+    function parar4(){
+        const certa3 = document.querySelector('#certa3')
+        const errada41 = document.querySelector('#errada41')
+        const errada42 = document.querySelector('#errada42')
+        const errada43 = document.querySelector('#errada43')
+        certa3.disabled = true
+        errada41.disabled = true
+        errada42.disabled = true
+        errada43.disabled = true
+        onclick = passar3()
+    }
+    
+    function certa3(){
+        const certa3 = document.querySelector('#certa3')
+        certa3.onclick = parar4()
+        certa3.style.background = 'green'
+        certa3.style.color = 'white'
+        
+    }
+
+    function errada41(){
+        const errada41 = document.querySelector('#errada41')
+        const certa3 = document.querySelector('#certa3')
+        errada41.onclick = parar4()
+        errada41.style.background = 'red'
+        certa3.style.background = 'green'
+        errada41.style.color = 'white'
+        certa3.style.color = 'white'
+    }
+    
+
+    function errada42(){
+        const errada42 = document.querySelector('#errada42')
+        const certa3 = document.querySelector('#certa3')
+        errada42.onclick = parar4()
+        errada42.style.background = 'red'
+        certa3.style.background = 'green'
+        errada42.style.color = 'white'
+        certa3.style.color = 'white'
+    }
+
+    function errada43(){
+        const errada43 = document.querySelector('#errada43')
+        const certa3 = document.querySelector('#certa3')
+        errada43.onclick = parar4()
+        errada43.style.background = 'red'
+        certa3.style.background = 'green'
+        errada43.style.color = 'white'
+        certa3.style.color = 'white'
+        
+    }
+    
+
+    function passar3(){
+
+        setTimeout(function(){
+            const per5 = document.querySelector('.per5')
+            per5.style.display = 'block'
+
+
+
+        },2000)
+
+
+
+    }
+
+
+
+
+</script>
+
+
+
+</div>
+
+<div class="per5" style="display: none;">
+
+    <h1>(5):</h1>
+    <h2>Qual dos seguintes músculos é responsável principalmente pela extensão do joelho?</h2>
+
+<button  id="errada52" onclick="errada52()">Bíceps femoral</button><br>
+<button  id="errada51" onclick="errada51()">Gastrocnêmio</button><br>
+<button  id="errada53" onclick="errada53()">Tibial anterior</button><br>
+<button  id="certa4" onclick="certa4()">Quadríceps femoral</button>
+
+
+<script>
+
+    
+    function parar5(){
+        const certa4 = document.querySelector('#certa4')
+        const errada51 = document.querySelector('#errada51')
+        const errada52 = document.querySelector('#errada52')
+        const errada53 = document.querySelector('#errada53')
+        certa4.disabled = true
+        errada51.disabled = true
+        errada52.disabled = true
+        errada53.disabled = true
+        onclick = passar4()
+    }
+    
+    function certa4(){
+        const certa4 = document.querySelector('#certa4')
+        certa4.onclick = parar5()
+        certa4.style.background = 'green'
+        certa4.style.color = 'white'
+        
+    }
+
+    function errada51(){
+        const errada51 = document.querySelector('#errada51')
+        const certa4 = document.querySelector('#certa4')
+        errada51.onclick = parar5()
+        errada51.style.background = 'red'
+        certa4.style.background = 'green'
+        errada51.style.color = 'white'
+        certa4.style.color = 'white'
+    }
+    
+
+    function errada52(){
+        const errada52 = document.querySelector('#errada52')
+        const certa4 = document.querySelector('#certa4')
+        errada52.onclick = parar5()
+        errada52.style.background = 'red'
+        certa4.style.background = 'green'
+        errada52.style.color = 'white'
+        certa4.style.color = 'white'
+    }
+
+    function errada53(){
+        const errada53 = document.querySelector('#errada53')
+        const certa4 = document.querySelector('#certa4')
+        errada53.onclick = parar5()
+        errada53.style.background = 'red'
+        certa4.style.background = 'green'
+        errada53.style.color = 'white'
+        certa4.style.color = 'white'
+        
+    }
+    
+
+    function passar4(){
+
+        setTimeout(function(){
+            
+
+
+
+        },2000)
+
+
+
+    }
+
+
+
+
+</script>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

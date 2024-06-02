@@ -15,6 +15,7 @@
     <button  id="errada2" onclick="errada2()">Estiliar a pagina web</button><br>
     <button  id="errada3" onclick="errada3()">Dar espaço entre as palavras</button><br>
     <button  id="certa" onclick="certa()">Estruturar a pagina web</button><br>
+    <button  id="errada4" onclick="errada4()">Deixar o script interativo</button><br>
 
     <script>
 
@@ -24,10 +25,12 @@
             const errada = document.querySelector('#errada')
             const errada2 = document.querySelector('#errada2')
             const errada3 = document.querySelector('#errada3')
+            const errada4 = document.querySelector('#errada4')
             certa.disabled = true
             errada.disabled = true
             errada2.disabled = true
             errada3.disabled = true
+            errada4.disabled = true
             onclick = passar()
         }
         
@@ -69,6 +72,16 @@
             errada3.style.color = 'white'
             certa.style.color = 'white'
         }
+        function errada4(){
+            const errada4 = document.querySelector('#errada4')
+            const certa = document.querySelector('#certa')
+            errada4.onclick = parar()
+            errada4.style.background = 'red'
+            certa.style.background = 'green'
+            errada4.style.color = 'white'
+            certa.style.color = 'white'
+        }
+        
         
     
         function passar(){
@@ -100,10 +113,11 @@
     <h1>Pergunta 2:</h1>
     <h2>Qual a função do < p > no HTML</h2>
 
-<button  id="certa1" onclick="certa1()">Colocar paágrafos</button><br>
+<button  id="certa1" onclick="certa1()">Colocar parágrafos</button><br>
 <button  id="errada22" onclick="errada22()">Dar quebras de linhas</button><br>
 <button  id="errada23" onclick="errada23()">Adicionar imagens</button><br>
 <button  id="errada21" onclick="errada21()">Adicionar áudio</button><br>
+<button  id="errada24" onclick="errada24()">Adicionar botões</button><br>
 
 
 <script>
@@ -114,10 +128,12 @@
         const errada21 = document.querySelector('#errada21')
         const errada22 = document.querySelector('#errada22')
         const errada23 = document.querySelector('#errada23')
+        const errada24 = document.querySelector('#errada24')
         certa1.disabled = true
         errada21.disabled = true
         errada22.disabled = true
         errada23.disabled = true
+        errada24.disabled = true
         onclick = passar1()
     }
     
@@ -160,6 +176,19 @@
         certa1.style.color = 'white'
         
     }
+
+    function errada24(){
+        const errada24 = document.querySelector('#errada24')
+        const certa1 = document.querySelector('#certa1')
+        errada24.onclick = parar1()
+        errada24.style.background = 'red'
+        certa1.style.background = 'green'
+        errada24.style.color = 'white'
+        certa1.style.color = 'white'
+        
+    }
+    
+    
     
 
     function passar1(){
@@ -195,6 +224,7 @@
 <button  id="certa2" onclick="certa2()">Dar quebras de linhas</button><br>
 <button  id="errada33" onclick="errada33()">Fazer uma quebra de parágrafos</button><br>
 <button  id="errada31" onclick="errada31()">fazer instâncias</button><br>
+<button  id="errada34" onclick="errada34()">Fazer quebras de vídeos</button><br>
 
 
 <script>
@@ -205,10 +235,12 @@
         const errada31 = document.querySelector('#errada31')
         const errada32 = document.querySelector('#errada32')
         const errada33 = document.querySelector('#errada33')
+        const errada34 = document.querySelector('#errada34')
         certa2.disabled = true
         errada31.disabled = true
         errada32.disabled = true
         errada33.disabled = true
+        errada34.disabled = true
         onclick = passar2()
     }
     
@@ -251,6 +283,17 @@
         certa2.style.color = 'white'
         
     }
+
+    function errada34(){
+        const errada34 = document.querySelector('#errada34')
+        const certa2 = document.querySelector('#certa2')
+        errada34.onclick = parar3()
+        errada34.style.background = 'red'
+        certa2.style.background = 'green'
+        errada34.style.color = 'white'
+        certa2.style.color = 'white'
+        
+    }
     
 
     function passar2(){
@@ -284,7 +327,9 @@
 <button  id="errada42" onclick="errada42()">< a href="https://www.exemplo.com">Clique aqui< /a></button><br>
 <button  id="errada43" onclick="errada43()">< a href="https://www.exemplo.com" target="new">Clique aqui< /a></button><br>
 <button  id="certa3" onclick="certa3()">< a href="https://www.exemplo.com" target="_blank">Clique aqui< /a></button><br>
-<button  id="errada41" onclick="errada41()">< a href="https://www.exemplo.com" window="_blank">Clique aqui< /a></button>
+<button  id="errada41" onclick="errada41()">< a href="https://www.exemplo.com" window="_blank">Clique aqui< /a></button><br>
+<button  id="errada44" onclick="errada44()">< link rel="stylesheet" href="https://www.exemplo.com" ></button>
+
 
 
 <script>
@@ -295,10 +340,12 @@
         const errada41 = document.querySelector('#errada41')
         const errada42 = document.querySelector('#errada42')
         const errada43 = document.querySelector('#errada43')
+        const errada44 = document.querySelector('#errada44')
         certa3.disabled = true
         errada41.disabled = true
         errada42.disabled = true
         errada43.disabled = true
+        errada44.disabled = true
         onclick = passar3()
     }
     
@@ -341,6 +388,16 @@
         certa3.style.color = 'white'
         
     }
+    function errada44(){
+        const errada44 = document.querySelector('#errada44')
+        const certa3 = document.querySelector('#certa3')
+        errada44.onclick = parar4()
+        errada44.style.background = 'red'
+        certa3.style.background = 'green'
+        errada44.style.color = 'white'
+        certa3.style.color = 'white'
+        
+    }
     
 
     function passar3(){
@@ -374,7 +431,8 @@
 <button  id="errada52" onclick="errada52()">< list ></button><br>
 <button  id="certa4" onclick="certa4()">< ul ></button><br>
 <button  id="errada53" onclick="errada53()">< ol ></button><br>
-<button  id="errada51" onclick="errada51()">< li ></button>
+<button  id="errada51" onclick="errada51()">< li ></button><br>
+<button  id="errada54" onclick="errada54()">< el ></button>
 
 
 <script>
@@ -385,10 +443,12 @@
         const errada51 = document.querySelector('#errada51')
         const errada52 = document.querySelector('#errada52')
         const errada53 = document.querySelector('#errada53')
+        const errada54 = document.querySelector('#errada54')
         certa4.disabled = true
         errada51.disabled = true
         errada52.disabled = true
         errada53.disabled = true
+        errada54.disabled = true
         onclick = passar4()
     }
     
@@ -428,6 +488,17 @@
         errada53.style.background = 'red'
         certa4.style.background = 'green'
         errada53.style.color = 'white'
+        certa4.style.color = 'white'
+        
+    }
+
+    function errada54(){
+        const errada54 = document.querySelector('#errada54')
+        const certa4 = document.querySelector('#certa4')
+        errada54.onclick = parar5()
+        errada54.style.background = 'red'
+        certa4.style.background = 'green'
+        errada54.style.color = 'white'
         certa4.style.color = 'white'
         
     }
