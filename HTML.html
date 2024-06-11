@@ -1,603 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        .pagina {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; 
-        }
-        
-        button {
-                width: 400px;
-                padding: 18px;
-                border-left: 50px;
-                margin: 5px;
-                font-size: 16px;
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                cursor: pointer;
-                border-radius: 5px;
-                text-align: center;     
-                display: block;
-                margin: 0 auto;
-                transition: background-color 0.4s;
-            }
-
-                .per1 {
-                color:#ffff99;
-            }
-                .per2 {
-                color:#ffff99;
-            }
-                .per3 {
-                color:#ffff99;
-            }
-                .per4 {
-                    color:#ffff99;
-            }
-                .per5{
-                    color:#ffff99;
-            }
-            
-
-.per4_perguntas{
-
-    padding: 10px;
-
-
-
-}
-
-    </style>
 </head>
-<body style="background-color:#6600cc;">
+
+<body style="background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-angustiado-de-design-plano_23-2150525327.jpg);">
+    <h1> HTML </h1>
     <div class="pagina">
-    <div class="per1">   
-    <h1>A primeira Pergunta:</h1>
-    <h2>Qual a função do html am uma pagina web?</h2>
+   <div class="pontuacao" style="display: none;">
     
-    <button  id="errada" onclick="errada()">Quebras de linhas</button><br>
-    <button  id="errada2" onclick="errada2()">Estiliar a pagina web</button><br>
-    <button  id="errada3" onclick="errada3()">Dar espaço entre as palavras</button><br>
-    <button  id="certa" onclick="certa()">Estruturar a pagina web</button><br>
-    <button  id="errada4" onclick="errada4()">Deixar o script interativo</button><br>
-
-
-    <script>
-
-    
-        function parar(){
-            const certa = document.querySelector('#certa')
-            const errada = document.querySelector('#errada')
-            const errada2 = document.querySelector('#errada2')
-            const errada3 = document.querySelector('#errada3')
-            const errada4 = document.querySelector('#errada4')
-            certa.disabled = true
-            errada.disabled = true
-            errada2.disabled = true
-            errada3.disabled = true
-            errada4.disabled = true
-            onclick = passar()
-            
-        }
-        
-        function certa(){
-            const certa = document.querySelector('#certa')
-            certa.onclick = parar()
-            certa.style.background = 'green'
-            certa.style.color = 'white'
-            
-        }
-    
-        function errada(){
-            const errada = document.querySelector('#errada')
-            const certa = document.querySelector('#certa')
-            errada.onclick = parar()
-            errada.style.background = 'red'
-            certa.style.background = 'green'
-            errada.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        
-    
-        function errada2(){
-            const errada2 = document.querySelector('#errada2')
-            const certa = document.querySelector('#certa')
-            errada2.onclick = parar()
-            errada2.style.background = 'red'
-            certa.style.background = 'green'
-            errada2.style.color = 'white'
-            certa.style.color = 'white'
-        }
-    
-        function errada3(){
-            const errada3 = document.querySelector('#errada3')
-            const certa = document.querySelector('#certa')
-            errada3.onclick = parar()
-            errada3.style.background = 'red'
-            certa.style.background = 'green'
-            errada3.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        function errada4(){
-            const errada4 = document.querySelector('#errada4')
-            const certa = document.querySelector('#certa')
-            errada4.onclick = parar()
-            errada4.style.background = 'red'
-            certa.style.background = 'green'
-            errada4.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        
-        
-    
-        function passar(){
-    
-            setTimeout(function(){
-                const per2 = document.querySelector('.per2')
-                const per1 = document.querySelector('.per1')
-                per2.style.display = 'block'
-                per1.style.display = 'none'
-
-    
-    
-    
-            },2000)
-    
-    
-    
-        }
-    
-    
-    
-    
-    </script>
-
-
-</div> 
-
-
-
-<div class="per2" style="display: none;">
-
-    <h1>Pergunta 2:</h1>
-    <h2>Qual a função do < p > no HTML</h2>
-
-<button  id="certa1" onclick="certa1()">Colocar parágrafos</button><br>
-<button  id="errada22" onclick="errada22()">Dar quebras de linhas</button><br>
-<button  id="errada23" onclick="errada23()">Adicionar imagens</button><br>
-<button  id="errada21" onclick="errada21()">Adicionar áudio</button><br>
-<button  id="errada24" onclick="errada24()">Adicionar botões</button><br>
-
-
-<script>
-
-    
-    function parar1(){
-        const certa1 = document.querySelector('#certa1')
-        const errada21 = document.querySelector('#errada21')
-        const errada22 = document.querySelector('#errada22')
-        const errada23 = document.querySelector('#errada23')
-        const errada24 = document.querySelector('#errada24')
-        certa1.disabled = true
-        errada21.disabled = true
-        errada22.disabled = true
-        errada23.disabled = true
-        errada24.disabled = true
-        onclick = passar1()
-    }
-    
-    function certa1(){
-        const certa1 = document.querySelector('#certa1')
-        certa1.onclick = parar1()
-        certa1.style.background = 'green'
-        certa1.style.color = 'white'
-        
-    }
-
-    function errada21(){
-        const errada21 = document.querySelector('#errada21')
-        const certa1 = document.querySelector('#certa1')
-        errada21.onclick = parar1()
-        errada21.style.background = 'red'
-        certa1.style.background = 'green'
-        errada21.style.color = 'white'
-        certa1.style.color = 'white'
-    }
-    
-
-    function errada22(){
-        const errada22 = document.querySelector('#errada22')
-        const certa1 = document.querySelector('#certa1')
-        errada22.onclick = parar1()
-        errada22.style.background = 'red'
-        certa1.style.background = 'green'
-        errada22.style.color = 'white'
-        certa1.style.color = 'white'
-    }
-
-    function errada23(){
-        const errada23 = document.querySelector('#errada23')
-        const certa1 = document.querySelector('#certa1')
-        errada23.onclick = parar1()
-        errada23.style.background = 'red'
-        certa1.style.background = 'green'
-        errada23.style.color = 'white'
-        certa1.style.color = 'white'
-        
-    }
-
-    function errada24(){
-        const errada24 = document.querySelector('#errada24')
-        const certa1 = document.querySelector('#certa1')
-        errada24.onclick = parar1()
-        errada24.style.background = 'red'
-        certa1.style.background = 'green'
-        errada24.style.color = 'white'
-        certa1.style.color = 'white'
-        
-    }
-    
-    
-    
-
-    function passar1(){
-
-        setTimeout(function(){
-            const per3 = document.querySelector('.per3')
-            const per2 = document.querySelector('.per2')
-            per3.style.display = 'block'
-            per2.style.display = 'none'
-
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per3" style="display: none;">
-
-    <h1>Pergunta 3:</h1>
-    <h2>Qual a função do < br > no HTML?</h2>
-
-<button  id="errada32" onclick="errada32()">Adicionar imagens</button><br>
-<button  id="certa2" onclick="certa2()">Dar quebras de linhas</button><br>
-<button  id="errada33" onclick="errada33()">Fazer uma quebra de parágrafos</button><br>
-<button  id="errada31" onclick="errada31()">fazer instâncias</button><br>
-<button  id="errada34" onclick="errada34()">Fazer quebras de vídeos</button><br>
-
-
-<script>
-
-    
-    function parar3(){
-        const certa2 = document.querySelector('#certa2')
-        const errada31 = document.querySelector('#errada31')
-        const errada32 = document.querySelector('#errada32')
-        const errada33 = document.querySelector('#errada33')
-        const errada34 = document.querySelector('#errada34')
-        certa2.disabled = true
-        errada31.disabled = true
-        errada32.disabled = true
-        errada33.disabled = true
-        errada34.disabled = true
-        onclick = passar2()
-    }
-    
-    function certa2(){
-        const certa2 = document.querySelector('#certa2')
-        certa2.onclick = parar3()
-        certa2.style.background = 'green'
-        certa2.style.color = 'white'
-        
-    }
-
-    function errada31(){
-        const errada31 = document.querySelector('#errada31')
-        const certa2 = document.querySelector('#certa2')
-        errada31.onclick = parar3()
-        errada31.style.background = 'red'
-        certa2.style.background = 'green'
-        errada31.style.color = 'white'
-        certa2.style.color = 'white'
-    }
-    
-
-    function errada32(){
-        const errada32 = document.querySelector('#errada32')
-        const certa2 = document.querySelector('#certa2')
-        errada32.onclick = parar3()
-        errada32.style.background = 'red'
-        certa2.style.background = 'green'
-        errada32.style.color = 'white'
-        certa2.style.color = 'white'
-    }
-
-    function errada33(){
-        const errada33 = document.querySelector('#errada33')
-        const certa2 = document.querySelector('#certa2')
-        errada33.onclick = parar3()
-        errada33.style.background = 'red'
-        certa2.style.background = 'green'
-        errada33.style.color = 'white'
-        certa2.style.color = 'white'
-        
-    }
-
-    function errada34(){
-        const errada34 = document.querySelector('#errada34')
-        const certa2 = document.querySelector('#certa2')
-        errada34.onclick = parar3()
-        errada34.style.background = 'red'
-        certa2.style.background = 'green'
-        errada34.style.color = 'white'
-        certa2.style.color = 'white'
-        
-    }
-    
-
-    function passar2(){
-
-        setTimeout(function(){
-            const per4 = document.querySelector('.per4')
-            const per3 = document.querySelector('.per3')
-            per4.style.display = 'block'
-            per3.style.display = 'none'
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per4" style="display: none;">
-
-    <h1>Pergunta 4:</h1>
-    <h2>Qual é a tag usada para definir um link em HTML?</h2>
-
-<div class="per4_perguntas">
-
-<button  id="errada42" onclick="errada42()">< link > - Usada para associar um documento a um recurso externo</button><br>
-<button  id="errada43" onclick="errada43()">< href > - Atributo usado dentro da tag < a > para especificar o destino do link.</button><br>
-<button  id="certa3" onclick="certa3()">< a > - Usada para criar links em HTML</button><br>
-<button  id="errada41" onclick="errada41()">< url > - usada para endereçar recursos </button><br>
-<button  id="errada44" onclick="errada44()">< src > - Atributo usado como uma imagem ou um script.</button>
-</div>
-
-
-<script>
-
-    
-    function parar4(){
-        const certa3 = document.querySelector('#certa3')
-        const errada41 = document.querySelector('#errada41')
-        const errada42 = document.querySelector('#errada42')
-        const errada43 = document.querySelector('#errada43')
-        const errada44 = document.querySelector('#errada44')
-        certa3.disabled = true
-        errada41.disabled = true
-        errada42.disabled = true
-        errada43.disabled = true
-        errada44.disabled = true
-        onclick = passar3()
-    }
-    
-    function certa3(){
-        const certa3 = document.querySelector('#certa3')
-        certa3.onclick = parar4()
-        certa3.style.background = 'green'
-        certa3.style.color = 'white'
-        
-    }
-
-    function errada41(){
-        const errada41 = document.querySelector('#errada41')
-        const certa3 = document.querySelector('#certa3')
-        errada41.onclick = parar4()
-        errada41.style.background = 'red'
-        certa3.style.background = 'green'
-        errada41.style.color = 'white'
-        certa3.style.color = 'white'
-    }
-    
-
-    function errada42(){
-        const errada42 = document.querySelector('#errada42')
-        const certa3 = document.querySelector('#certa3')
-        errada42.onclick = parar4()
-        errada42.style.background = 'red'
-        certa3.style.background = 'green'
-        errada42.style.color = 'white'
-        certa3.style.color = 'white'
-    }
-
-    function errada43(){
-        const errada43 = document.querySelector('#errada43')
-        const certa3 = document.querySelector('#certa3')
-        errada43.onclick = parar4()
-        errada43.style.background = 'red'
-        certa3.style.background = 'green'
-        errada43.style.color = 'white'
-        certa3.style.color = 'white'
-        
-    }
-    function errada44(){
-        const errada44 = document.querySelector('#errada44')
-        const certa3 = document.querySelector('#certa3')
-        errada44.onclick = parar4()
-        errada44.style.background = 'red'
-        certa3.style.background = 'green'
-        errada44.style.color = 'white'
-        certa3.style.color = 'white'
-        
-    }
-    
-
-    function passar3(){
-
-        setTimeout(function(){
-            const per5 = document.querySelector('.per5')
-            const per4 = document.querySelector('.per4')
-            per5.style.display = 'block'
-            per4.style.display = 'none'
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per5" style="display: none;">
-
-    <h1>Pergunta 5:</h1>
-    <h2>Qual das seguintes tags HTML é usada para definir uma lista não ordenada?</h2>
-
-<button  id="errada52" onclick="errada52()">< list ></button><br>
-<button  id="certa4" onclick="certa4()">< ul ></button><br>
-<button  id="errada53" onclick="errada53()">< ol ></button><br>
-<button  id="errada51" onclick="errada51()">< li ></button><br>
-<button  id="errada54" onclick="errada54()">< el ></button>
-
-
-<script>
-
-    
-    function parar5(){
-        const certa4 = document.querySelector('#certa4')
-        const errada51 = document.querySelector('#errada51')
-        const errada52 = document.querySelector('#errada52')
-        const errada53 = document.querySelector('#errada53')
-        const errada54 = document.querySelector('#errada54')
-        certa4.disabled = true
-        errada51.disabled = true
-        errada52.disabled = true
-        errada53.disabled = true
-        errada54.disabled = true
-        onclick = passar4()
-    }
-    
-    function certa4(){
-        const certa4 = document.querySelector('#certa4')
-        certa4.onclick = parar5()
-        certa4.style.background = 'green'
-        certa4.style.color = 'white'
-        
-    }
-
-    function errada51(){
-        const errada51 = document.querySelector('#errada51')
-        const certa4 = document.querySelector('#certa4')
-        errada51.onclick = parar5()
-        errada51.style.background = 'red'
-        certa4.style.background = 'green'
-        errada51.style.color = 'white'
-        certa4.style.color = 'white'
-    }
-    
-
-    function errada52(){
-        const errada52 = document.querySelector('#errada52')
-        const certa4 = document.querySelector('#certa4')
-        errada52.onclick = parar5()
-        errada52.style.background = 'red'
-        certa4.style.background = 'green'
-        errada52.style.color = 'white'
-        certa4.style.color = 'white'
-    }
-
-    function errada53(){
-        const errada53 = document.querySelector('#errada53')
-        const certa4 = document.querySelector('#certa4')
-        errada53.onclick = parar5()
-        errada53.style.background = 'red'
-        certa4.style.background = 'green'
-        errada53.style.color = 'white'
-        certa4.style.color = 'white'
-        
-    }
-
-    function errada54(){
-        const errada54 = document.querySelector('#errada54')
-        const certa4 = document.querySelector('#certa4')
-        errada54.onclick = parar5()
-        errada54.style.background = 'red'
-        certa4.style.background = 'green'
-        errada54.style.color = 'white'
-        certa4.style.color = 'white'
-        
-    }
-    
-
-    function passar4(){
-
-        setTimeout(function(){
+    <h3>Sua pontuação: <span id="pontu">4</span></h3>
+
+
+   </div>
+   
+        <div class="per1">
+            <h1> HTML </h1>
+            <h2>Qual a função do html am uma pagina web?</h2>
+
+            <button id="errada" class="opc" onclick="errada(this)">Quebras de linhas</button><br>
+            <button id="errada2" class="opc" onclick="errada(this)">Estiliar a pagina web</button><br>
+            <button id="errada3" class="opc" onclick="errada(this)">Dar espaço entre as palavras</button><br>
+            <button id="certa" class="opc" onclick="certa(this)">Estruturar a pagina web</button><br>
+            <button id="errada4" class="opc" onclick="errada(this)">Deixar o script interativo</button><br>
             
 
 
 
-        },2000)
+
+
+        </div>
 
 
 
-    }
+        <div class="per2" style="display: none;">
+
+            <h1>HTML</h1>
+            <h2>Qual a função do < p> no HTML</h2>
+
+            <button id="certa1" class="opc" onclick="certa1(this)">Colocar parágrafos</button><br>
+            <button id="errada21" class="opc" onclick="errada1(this)">Dar quebras de linhas</button><br>
+            <button id="errada22" class="opc" onclick="errada1(this)">Adicionar imagens</button><br>
+            <button id="errada23" class="opc" onclick="errada1(this)">Adicionar áudio</button><br>
+            <button id="errada24" class="opc" onclick="errada1(this)">Adicionar botões</button><br>
+
+
+            
+
+
+
+        </div>
+
+        <div class="per3" style="display: none;">
+
+            <h1>HTML</h1>
+            <h2>Qual a função do < br> no HTML?</h2>
+
+            <button id="errada32" class="opc" onclick="errada2(this)">Adicionar imagens</button><br>
+            <button id="certa2" class="opc" onclick="certa2(this)">Dar quebras de linhas</button><br>
+            <button id="errada33" class="opc" onclick="errada2(this)">Fazer uma quebra de parágrafos</button><br>
+            <button id="errada31" class="opc" onclick="errada2(this)">fazer instâncias</button><br>
+            <button id="errada34" class="opc" onclick="errada2(this)">Fazer quebras de vídeos</button><br>
+
+
+            
+
+
+        </div>
+
+        <div class="per4" style="display: none;">
+
+            <h1>HTML</h1>
+            <h2>Qual tag HTML é usada para criar um link para outra página?</h2>
+
+            
+
+                <button id="errada42" class="opc" onclick="errada3(this)">
+                     < a >
+                </button><br>
+                <button id="errada43" class="opc" onclick="errada3(this)">
+                    < link>
+                </button><br>
+                <button id="certa3" class="opc" onclick="certa3(this)">
+                    < href>
+                </button><br>
+                <button id="errada41" class="opc" onclick="errada3(this)">
+                    < url>
+                </button><br>
+                <button id="errada44" class="opc" onclick="errada3(this)">
+                    < src>
+                </button>
+            
+
+
+            
+
+
+
+        </div>
+
+        <div class="per5" style="display: none;">
+
+            <h1>HTML</h1>
+            <h2>Qual das seguintes tags HTML é usada para definir uma lista não ordenada?</h2>
+
+            <button id="errada52" class="opc" onclick="errada4(this)">
+                < list>
+            </button><br>
+            <button id="certa4" class="opc" onclick="certa4(this)">
+                < ul>
+            </button><br>
+            <button id="errada53" class="opc" onclick="errada4(this)">
+                < ol>
+            </button><br>
+            <button id="errada51" class="opc" onclick="errada4(this)">
+                < li>
+                </button><br>
+            <button id="errada54" class="opc" onclick="errada4(this)">
+                < el>
+            </button>
+
+
+
+        </div>
+    </div>
+    
+
+    <div class="logonoquiz"> <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png"
+        height="150px"
+        width="300px"
+        alt="Logo do Quiz">
+    </div>
 
 
 
 
-</script>
-
-
-
-</div>
-</div>
-
-
-
-
-
-
-
+<script src="js.js"></script>
 </body>
+
 </html>

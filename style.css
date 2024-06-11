@@ -1,0 +1,86 @@
+.body {
+    background: linear-gradient(45deg, white, black);
+
+}
+
+.pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 940px;
+}
+
+button {
+    position: relative;
+    top: 40px;
+    width: 400px;
+    padding: 30px;
+    border-left: 50px;
+    font-size: 23px;
+    background-color: #0b21e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    transition: background-color 0.3s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+    
+
+}
+
+.imgquiz {
+    position: relative;
+    left: 26px;
+    top: -930px;
+    height: 20px;
+    width: 200px;
+}
+
+
+
+.opc:hover {
+    transform: scale(1.1);
+}
+
+.logonoquiz {
+    position:fixed;
+    left: 55%;
+    top: 2%;
+    
+}
+h1 {
+    font-size:100px;
+    position: absolute;
+    left: 42.5%;
+    top: -5%;
+    height: 50px;
+    width: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h2{
+    font-size:30px;
+    position: relative;
+    left:auto;
+    top:25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pontuacao{
+position: fixed;
+left: 25%;
+top: 20%;
+font-size: 100px;
+
+
+
+
+}
+
+
+
