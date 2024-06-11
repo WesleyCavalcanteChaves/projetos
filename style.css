@@ -52,10 +52,24 @@ button {
     top: 2%;
     
 }
+.logonoquiz1 {
+    position:fixed;
+    left: 62%;
+    top: 2%;
+
+    
+    
+}
+
+.logonoquiz2 {
+    position:fixed;
+    left: 62%;
+    top: 2%;
+}
 h1 {
     font-size:100px;
     position: absolute;
-    left: 42.5%;
+    left: 41%;
     top: -5%;
     height: 50px;
     width: 30px;

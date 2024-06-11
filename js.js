@@ -1,4 +1,7 @@
 
+function mostra(){
+    console.log(pontuacao)
+}
 
 let pontuacao = 0
 
@@ -24,6 +27,7 @@ function certa(test) {
     test.style.background = 'green'
     test.style.color = 'white'
     pontuacao = pontuacao + 10
+    mostra()
     
 
 }
@@ -37,6 +41,7 @@ function errada(test) {
     test.style.color = 'white'
     certa.style.color = 'white'
     pontuacao = pontuacao - 5
+    mostra()
 }
 
 
@@ -89,6 +94,7 @@ function certa1(test) {
     test.style.background = 'green'
     test.style.color = 'white'
     pontuacao = pontuacao + 10
+    mostra()
     
 
 }
@@ -101,6 +107,7 @@ function errada1(test) {
     test.style.color = 'white'
     certa1.style.color = 'white'
     pontuacao = pontuacao - 5
+    mostra()
 }
 
 function passar1() {
@@ -145,6 +152,7 @@ function certa2(test) {
     test.style.background = 'green'
     test.style.color = 'white'
     pontuacao = pontuacao + 10
+    mostra()
 
 }
 
@@ -156,6 +164,7 @@ function errada2(test) {
     test.style.color = 'white'
     certa2.style.color = 'white'
     pontuacao = pontuacao - 5
+    mostra()
 }
 
 function passar2() {
@@ -191,6 +200,7 @@ function parar3() {
     errada42.disabled = true
     errada44.disabled = true
     onclick = passar3()
+    mostra()
 
 }
 
@@ -200,6 +210,7 @@ function certa3(test) {
     test.style.background = 'green'
     test.style.color = 'white'
     pontuacao = pontuacao + 10
+    mostra()
 
 }
 
@@ -211,6 +222,7 @@ function errada3(test) {
     test.style.color = 'white'
     certa3.style.color = 'white'
     pontuacao = pontuacao - 5
+    mostra()
 }
 
 function passar3() {
@@ -256,8 +268,9 @@ function certa4(test) {
     
     test.style.background = 'green'
     test.style.color = 'white'
-    pontuacao = pontuacao + 10
     test.onclick = parar4()
+    pontuacao = pontuacao + 10
+    mostra()
 
 }
 
@@ -269,6 +282,7 @@ function errada4(test) {
     certa4.style.background = 'green'
     test.style.color = 'white'
     certa4.style.color = 'white'
+    mostra()
     
     
 }
@@ -293,7 +307,6 @@ function passar4() {
 
 
 }
-
 
 
 
