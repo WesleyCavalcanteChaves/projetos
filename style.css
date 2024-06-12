@@ -12,7 +12,7 @@
 
 button {
     position: relative;
-    top: 40px;
+    top: -40px;
     width: 400px;
     padding: 30px;
     border-left: 50px;
@@ -47,28 +47,28 @@ button {
 }
 
 .logonoquiz {
-    position:fixed;
+    position:relative;
     left: 55%;
-    top: 2%;
+    top: 100px;
     
 }
 .logonoquiz1 {
-    position:fixed;
+    position:relative;
     left: 62%;
-    top: 2%;
+    top: 10%;
 
     
     
 }
 
 .logonoquiz2 {
-    position:fixed;
-    left: 62%;
-    top: 2%;
+    position:relative;
+    left: 59%;
+    top: -20%;
 }
 h1 {
     font-size:100px;
-    position: absolute;
+    position: relative;
     left: 41%;
     top: -5%;
     height: 50px;
@@ -81,8 +81,11 @@ h2{
     font-size:30px;
     position: relative;
     left:auto;
-    top:25px;
+    top:-70px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.3)
+    
+    
 }
 
 .pontuacao{

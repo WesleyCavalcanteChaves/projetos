@@ -5,17 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .pagina {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        
+        button {
+                width: 400px;
+                padding: 18px;
+                border-left: 50px;
+                margin: 5px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;     
+                display: block;
+                margin: 0 auto;
+                transition: background-color 0.4s;
+            }
+
+                .per1 {
+                color:#ffff99;
+            }
+                .per2 {
+                color:#ffff99;
+            }
+                .per3 {
+                color:#ffff99;
+            }
+                .per4 {
+                    color:#ffff99;
+            }
+                .per5{
+                    color:#ffff99;
+            }
+            
+
+.per4_perguntas{
+
+    padding: 10px;
+
+
+
+}
+
+    </style>
 </head>
-<body>
+<body style="background-color:#6600cc;">
+    <div class="pagina">
     <div class="per1">   
     <h1>A primeira Pergunta:</h1>
-    <h2>Qual das seguintes funções é desempenhada pelo músculo masseter?</h2>
+    <h2>Se você tem apenas uma caixa de fósforos e entra em uma sala escura com uma lâmpada a gás, um aquecedor a óleo e uma vela, qual você acenderá primeiro?</h2>
     
-    <button  id="errada" onclick="errada()">Flexão do cotovelo</button><br>
-    <button  id="certa" onclick="certa()">Elevação da mandíbula</button><br>
-    <button  id="errada3" onclick="errada3()">Abdução do ombro</button><br>
-    <button  id="errada2" onclick="errada2()">Rotação do tronco</button><br>
-    <button  id="errada4" onclick="errada4()">Rotação da cabeça</button><br>
+    <button  id="errada4" onclick="errada4()">A Lampada</button><br>
+    <button  id="errada2" onclick="errada2()">O Aquecedor</button><br>
+    <button  id="errada3" onclick="errada3()">A Vela</button><br>
+    <button  id="errada" onclick="errada()">A lampada e a vela</button><br>
+    <button  id="certa" onclick="certa()">Nenhuma das anteriores</button><br>
+
 
     <script>
 
@@ -32,6 +86,7 @@
             errada3.disabled = true
             errada4.disabled = true
             onclick = passar()
+            
         }
         
         function certa(){
@@ -88,7 +143,10 @@
     
             setTimeout(function(){
                 const per2 = document.querySelector('.per2')
+                const per1 = document.querySelector('.per1')
                 per2.style.display = 'block'
+                per1.style.display = 'none'
+
     
     
     
@@ -111,13 +169,13 @@
 <div class="per2" style="display: none;">
 
     <h1>Pergunta 2:</h1>
-    <h2>Qual das seguintes funções é desempenhada pelo músculo deltóide?</h2>
+    <h2>Se um avião cai exatamente na fronteira entre os Estados Unidos e o Canadá, onde são enterrados os sobreviventes?</h2>
 
-<button  id="errada24" onclick="errada24()">Flexão braquial</button><br>
-<button  id="errada21" onclick="errada21()">Flexão do quadril</button><br>
-<button  id="errada22" onclick="errada22()">Extensão do joelho</button><br>
-<button  id="errada23" onclick="errada23()">Rotação do tornozelo</button><br>
-<button  id="certa1" onclick="certa1()">Abdução do braço</button><br>
+<button  id="errada21" onclick="errada21()">Alemanha</button><br>
+<button  id="errada22" onclick="errada22()">Brasil</button><br>
+<button  id="errada23" onclick="errada23()">Portugal</button><br>
+<button  id="certa1" onclick="certa1()">Sobreviventes não são enterrados.</button><br>
+<button  id="errada24" onclick="errada24()">canada</button><br>
 
 
 <script>
@@ -195,7 +253,9 @@
 
         setTimeout(function(){
             const per3 = document.querySelector('.per3')
+            const per2 = document.querySelector('.per2')
             per3.style.display = 'block'
+            per2.style.display = 'none'
 
 
 
@@ -218,13 +278,13 @@
 <div class="per3" style="display: none;">
 
     <h1>Pergunta 3:</h1>
-    <h2>Qual das seguintes atividades físicas é considerada um exercício de resistência muscular?</h2>
+    <h2> Se você está correndo uma corrida e ultrapassa o segundo colocado, qual é a sua posição agora?</h2>
 
-<button  id="errada32" onclick="errada32()">Sprint de 100 metros</button><br>
-<button  id="errada33" onclick="errada33()">Caminhada leve</button><br>
-<button  id="certa2" onclick="certa2()">Treinamento com elásticos</button><br>
-<button  id="errada31" onclick="errada31()">Meditação</button><br>
-<button  id="errada34" onclick="errada34()">alongamento</button><br>
+<button  id="errada32" onclick="errada32()">voce está terceiro lugar</button><br>
+<button  id="certa2" onclick="certa2()"> Você está em segundo lugar agora, já que ultrapassou o segundo colocado.</button><br>
+<button  id="errada33" onclick="errada33()">voce perdeu a corrida</button><br>
+<button  id="errada31" onclick="errada31()">voce está em primeiro lugar </button><br>
+<button  id="errada34" onclick="errada34()">n.d.a</button><br>
 
 
 <script>
@@ -300,7 +360,9 @@
 
         setTimeout(function(){
             const per4 = document.querySelector('.per4')
+            const per3 = document.querySelector('.per3')
             per4.style.display = 'block'
+            per3.style.display = 'none'
 
 
 
@@ -322,14 +384,16 @@
 <div class="per4" style="display: none;">
 
     <h1>Pergunta 4:</h1>
-    <h2>Qual das seguintes máquinas de academia é mais indicada para trabalhar os músculos do peitoral?</h2>
+    <h2> Quantos meses do ano têm 28 dias?</h2>
 
-<button  id="errada42" onclick="errada42()">Peck Deck - Dorsal</button><br>
-<button  id="errada43" onclick="errada43()">leg Press</button><br>
-<button  id="certa3" onclick="certa3()">Crucifixo</button><br>
-<button  id="errada41" onclick="errada41()">Remada Cavalo</button><br>
-<button  id="errada44" onclick="errada44()">Remada Baixa</button>
+<div class="per4_perguntas">
 
+<button  id="errada42" onclick="errada42()">apenas 11 messes do ano</button><br>
+<button  id="errada43" onclick="errada43()">se o ano for bissexto sao 9</button><br>
+<button  id="certa3" onclick="certa3()"> Todos os meses têm pelo menos 28 dias.</button><br>
+<button  id="errada41" onclick="errada41()">depende da lua</button><br>
+<button  id="errada44" onclick="errada44()">n.d.a</button>
+</div>
 
 
 <script>
@@ -404,7 +468,9 @@
 
         setTimeout(function(){
             const per5 = document.querySelector('.per5')
+            const per4 = document.querySelector('.per4')
             per5.style.display = 'block'
+            per4.style.display = 'none'
 
 
 
@@ -426,13 +492,13 @@
 <div class="per5" style="display: none;">
 
     <h1>Pergunta 5:</h1>
-    <h2>Qual dos seguintes músculos é responsável principalmente pela extensão do joelho?</h2>
+    <h2>Se você tem um litro de água e despeja metade em um recipiente, quanto líquido você tem?</h2>
 
-<button  id="errada52" onclick="errada52()">Bíceps femoral</button><br>
-<button  id="errada54" onclick="errada54()">Gastrocnêmio</button><br>
-<button  id="errada53" onclick="errada53()">Tibial anterior</button><br>
-<button  id="errada51" onclick="errada51()">Serrátil</button><br>
-<button  id="certa4" onclick="certa4()">Quadríceps femoral</button>
+<button  id="errada52" onclick="errada52()">voce tera metade de meio litro</button><br>
+<button  id="certa4" onclick="certa4()">Você ainda tem um litro de água, pois metade de um litro é meio litro, então você ainda tem meio litro mais meio litro, totalizando um litro</button><br>
+<button  id="errada53" onclick="errada53()">voce tera meio litro pos é a metade de um litro</button><br>
+<button  id="errada51" onclick="errada51()">depende do tamnho do balde</button><br>
+<button  id="errada54" onclick="errada54()">n.d.a</button>
 
 
 <script>
@@ -525,7 +591,7 @@
 
 
 </div>
-
+</div>
 
 
 

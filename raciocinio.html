@@ -1,603 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        .pagina {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; 
-        }
-        
-        button {
-                width: 400px;
-                padding: 18px;
-                border-left: 50px;
-                margin: 5px;
-                font-size: 16px;
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                cursor: pointer;
-                border-radius: 5px;
-                text-align: center;     
-                display: block;
-                margin: 0 auto;
-                transition: background-color 0.4s;
-            }
-
-                .per1 {
-                color:#ffff99;
-            }
-                .per2 {
-                color:#ffff99;
-            }
-                .per3 {
-                color:#ffff99;
-            }
-                .per4 {
-                    color:#ffff99;
-            }
-                .per5{
-                    color:#ffff99;
-            }
-            
-
-.per4_perguntas{
-
-    padding: 10px;
-
-
-
-}
-
-    </style>
 </head>
-<body style="background-color:#6600cc;">
+
+<body style="background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-angustiado-de-design-plano_23-2150525327.jpg);">
+    <h1>Lógica</h1>
     <div class="pagina">
-    <div class="per1">   
-    <h1>A primeira Pergunta:</h1>
-    <h2>Se você tem apenas uma caixa de fósforos e entra em uma sala escura com uma lâmpada a gás, um aquecedor a óleo e uma vela, qual você acenderá primeiro?</h2>
+   <div class="pontuacao" style="display: none;">
     
-    <button  id="errada4" onclick="errada4()">A Lampada</button><br>
-    <button  id="errada2" onclick="errada2()">O Aquecedor</button><br>
-    <button  id="errada3" onclick="errada3()">A Vela</button><br>
-    <button  id="errada" onclick="errada()">A lampada e a vela</button><br>
-    <button  id="certa" onclick="certa()">Nenhuma das anteriores</button><br>
+    <h3>Sua pontuação: <span id="pontu"></span></h3>
 
 
-    <script>
-
-    
-        function parar(){
-            const certa = document.querySelector('#certa')
-            const errada = document.querySelector('#errada')
-            const errada2 = document.querySelector('#errada2')
-            const errada3 = document.querySelector('#errada3')
-            const errada4 = document.querySelector('#errada4')
-            certa.disabled = true
-            errada.disabled = true
-            errada2.disabled = true
-            errada3.disabled = true
-            errada4.disabled = true
-            onclick = passar()
+   </div>
+   
+        <div class="per1">
             
-        }
-        
-        function certa(){
-            const certa = document.querySelector('#certa')
-            certa.onclick = parar()
-            certa.style.background = 'green'
-            certa.style.color = 'white'
-            
-        }
-    
-        function errada(){
-            const errada = document.querySelector('#errada')
-            const certa = document.querySelector('#certa')
-            errada.onclick = parar()
-            errada.style.background = 'red'
-            certa.style.background = 'green'
-            errada.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        
-    
-        function errada2(){
-            const errada2 = document.querySelector('#errada2')
-            const certa = document.querySelector('#certa')
-            errada2.onclick = parar()
-            errada2.style.background = 'red'
-            certa.style.background = 'green'
-            errada2.style.color = 'white'
-            certa.style.color = 'white'
-        }
-    
-        function errada3(){
-            const errada3 = document.querySelector('#errada3')
-            const certa = document.querySelector('#certa')
-            errada3.onclick = parar()
-            errada3.style.background = 'red'
-            certa.style.background = 'green'
-            errada3.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        function errada4(){
-            const errada4 = document.querySelector('#errada4')
-            const certa = document.querySelector('#certa')
-            errada4.onclick = parar()
-            errada4.style.background = 'red'
-            certa.style.background = 'green'
-            errada4.style.color = 'white'
-            certa.style.color = 'white'
-        }
-        
-        
-    
-        function passar(){
-    
-            setTimeout(function(){
-                const per2 = document.querySelector('.per2')
-                const per1 = document.querySelector('.per1')
-                per2.style.display = 'block'
-                per1.style.display = 'none'
-
-    
-    
-    
-            },2000)
-    
-    
-    
-        }
-    
-    
-    
-    
-    </script>
-
-
-</div> 
-
-
-
-<div class="per2" style="display: none;">
-
-    <h1>Pergunta 2:</h1>
-    <h2>Se um avião cai exatamente na fronteira entre os Estados Unidos e o Canadá, onde são enterrados os sobreviventes?</h2>
-
-<button  id="errada21" onclick="errada21()">Alemanha</button><br>
-<button  id="errada22" onclick="errada22()">Brasil</button><br>
-<button  id="errada23" onclick="errada23()">Portugal</button><br>
-<button  id="certa1" onclick="certa1()">Sobreviventes não são enterrados.</button><br>
-<button  id="errada24" onclick="errada24()">canada</button><br>
-
-
-<script>
-
-    
-    function parar1(){
-        const certa1 = document.querySelector('#certa1')
-        const errada21 = document.querySelector('#errada21')
-        const errada22 = document.querySelector('#errada22')
-        const errada23 = document.querySelector('#errada23')
-        const errada24 = document.querySelector('#errada24')
-        certa1.disabled = true
-        errada21.disabled = true
-        errada22.disabled = true
-        errada23.disabled = true
-        errada24.disabled = true
-        onclick = passar1()
-    }
-    
-    function certa1(){
-        const certa1 = document.querySelector('#certa1')
-        certa1.onclick = parar1()
-        certa1.style.background = 'green'
-        certa1.style.color = 'white'
-        
-    }
-
-    function errada21(){
-        const errada21 = document.querySelector('#errada21')
-        const certa1 = document.querySelector('#certa1')
-        errada21.onclick = parar1()
-        errada21.style.background = 'red'
-        certa1.style.background = 'green'
-        errada21.style.color = 'white'
-        certa1.style.color = 'white'
-    }
-    
-
-    function errada22(){
-        const errada22 = document.querySelector('#errada22')
-        const certa1 = document.querySelector('#certa1')
-        errada22.onclick = parar1()
-        errada22.style.background = 'red'
-        certa1.style.background = 'green'
-        errada22.style.color = 'white'
-        certa1.style.color = 'white'
-    }
-
-    function errada23(){
-        const errada23 = document.querySelector('#errada23')
-        const certa1 = document.querySelector('#certa1')
-        errada23.onclick = parar1()
-        errada23.style.background = 'red'
-        certa1.style.background = 'green'
-        errada23.style.color = 'white'
-        certa1.style.color = 'white'
-        
-    }
-
-    function errada24(){
-        const errada24 = document.querySelector('#errada24')
-        const certa1 = document.querySelector('#certa1')
-        errada24.onclick = parar1()
-        errada24.style.background = 'red'
-        certa1.style.background = 'green'
-        errada24.style.color = 'white'
-        certa1.style.color = 'white'
-        
-    }
-    
-    
-    
-
-    function passar1(){
-
-        setTimeout(function(){
-            const per3 = document.querySelector('.per3')
-            const per2 = document.querySelector('.per2')
-            per3.style.display = 'block'
-            per2.style.display = 'none'
-
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per3" style="display: none;">
-
-    <h1>Pergunta 3:</h1>
-    <h2> Se você está correndo uma corrida e ultrapassa o segundo colocado, qual é a sua posição agora?</h2>
-
-<button  id="errada32" onclick="errada32()">voce está terceiro lugar</button><br>
-<button  id="certa2" onclick="certa2()"> Você está em segundo lugar agora, já que ultrapassou o segundo colocado.</button><br>
-<button  id="errada33" onclick="errada33()">voce perdeu a corrida</button><br>
-<button  id="errada31" onclick="errada31()">voce está em primeiro lugar </button><br>
-<button  id="errada34" onclick="errada34()">n.d.a</button><br>
-
-
-<script>
-
-    
-    function parar3(){
-        const certa2 = document.querySelector('#certa2')
-        const errada31 = document.querySelector('#errada31')
-        const errada32 = document.querySelector('#errada32')
-        const errada33 = document.querySelector('#errada33')
-        const errada34 = document.querySelector('#errada34')
-        certa2.disabled = true
-        errada31.disabled = true
-        errada32.disabled = true
-        errada33.disabled = true
-        errada34.disabled = true
-        onclick = passar2()
-    }
-    
-    function certa2(){
-        const certa2 = document.querySelector('#certa2')
-        certa2.onclick = parar3()
-        certa2.style.background = 'green'
-        certa2.style.color = 'white'
-        
-    }
-
-    function errada31(){
-        const errada31 = document.querySelector('#errada31')
-        const certa2 = document.querySelector('#certa2')
-        errada31.onclick = parar3()
-        errada31.style.background = 'red'
-        certa2.style.background = 'green'
-        errada31.style.color = 'white'
-        certa2.style.color = 'white'
-    }
-    
-
-    function errada32(){
-        const errada32 = document.querySelector('#errada32')
-        const certa2 = document.querySelector('#certa2')
-        errada32.onclick = parar3()
-        errada32.style.background = 'red'
-        certa2.style.background = 'green'
-        errada32.style.color = 'white'
-        certa2.style.color = 'white'
-    }
-
-    function errada33(){
-        const errada33 = document.querySelector('#errada33')
-        const certa2 = document.querySelector('#certa2')
-        errada33.onclick = parar3()
-        errada33.style.background = 'red'
-        certa2.style.background = 'green'
-        errada33.style.color = 'white'
-        certa2.style.color = 'white'
-        
-    }
-
-    function errada34(){
-        const errada34 = document.querySelector('#errada34')
-        const certa2 = document.querySelector('#certa2')
-        errada34.onclick = parar3()
-        errada34.style.background = 'red'
-        certa2.style.background = 'green'
-        errada34.style.color = 'white'
-        certa2.style.color = 'white'
-        
-    }
-    
-
-    function passar2(){
-
-        setTimeout(function(){
-            const per4 = document.querySelector('.per4')
-            const per3 = document.querySelector('.per3')
-            per4.style.display = 'block'
-            per3.style.display = 'none'
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per4" style="display: none;">
-
-    <h1>Pergunta 4:</h1>
-    <h2> Quantos meses do ano têm 28 dias?</h2>
-
-<div class="per4_perguntas">
-
-<button  id="errada42" onclick="errada42()">apenas 11 messes do ano</button><br>
-<button  id="errada43" onclick="errada43()">se o ano for bissexto sao 9</button><br>
-<button  id="certa3" onclick="certa3()"> Todos os meses têm pelo menos 28 dias.</button><br>
-<button  id="errada41" onclick="errada41()">depende da lua</button><br>
-<button  id="errada44" onclick="errada44()">n.d.a</button>
-</div>
-
-
-<script>
-
-    
-    function parar4(){
-        const certa3 = document.querySelector('#certa3')
-        const errada41 = document.querySelector('#errada41')
-        const errada42 = document.querySelector('#errada42')
-        const errada43 = document.querySelector('#errada43')
-        const errada44 = document.querySelector('#errada44')
-        certa3.disabled = true
-        errada41.disabled = true
-        errada42.disabled = true
-        errada43.disabled = true
-        errada44.disabled = true
-        onclick = passar3()
-    }
-    
-    function certa3(){
-        const certa3 = document.querySelector('#certa3')
-        certa3.onclick = parar4()
-        certa3.style.background = 'green'
-        certa3.style.color = 'white'
-        
-    }
-
-    function errada41(){
-        const errada41 = document.querySelector('#errada41')
-        const certa3 = document.querySelector('#certa3')
-        errada41.onclick = parar4()
-        errada41.style.background = 'red'
-        certa3.style.background = 'green'
-        errada41.style.color = 'white'
-        certa3.style.color = 'white'
-    }
-    
-
-    function errada42(){
-        const errada42 = document.querySelector('#errada42')
-        const certa3 = document.querySelector('#certa3')
-        errada42.onclick = parar4()
-        errada42.style.background = 'red'
-        certa3.style.background = 'green'
-        errada42.style.color = 'white'
-        certa3.style.color = 'white'
-    }
-
-    function errada43(){
-        const errada43 = document.querySelector('#errada43')
-        const certa3 = document.querySelector('#certa3')
-        errada43.onclick = parar4()
-        errada43.style.background = 'red'
-        certa3.style.background = 'green'
-        errada43.style.color = 'white'
-        certa3.style.color = 'white'
-        
-    }
-    function errada44(){
-        const errada44 = document.querySelector('#errada44')
-        const certa3 = document.querySelector('#certa3')
-        errada44.onclick = parar4()
-        errada44.style.background = 'red'
-        certa3.style.background = 'green'
-        errada44.style.color = 'white'
-        certa3.style.color = 'white'
-        
-    }
-    
-
-    function passar3(){
-
-        setTimeout(function(){
-            const per5 = document.querySelector('.per5')
-            const per4 = document.querySelector('.per4')
-            per5.style.display = 'block'
-            per4.style.display = 'none'
-
-
-
-        },2000)
-
-
-
-    }
-
-
-
-
-</script>
-
-
-
-</div>
-
-<div class="per5" style="display: none;">
-
-    <h1>Pergunta 5:</h1>
-    <h2>Se você tem um litro de água e despeja metade em um recipiente, quanto líquido você tem?</h2>
-
-<button  id="errada52" onclick="errada52()">voce tera metade de meio litro</button><br>
-<button  id="certa4" onclick="certa4()">Você ainda tem um litro de água, pois metade de um litro é meio litro, então você ainda tem meio litro mais meio litro, totalizando um litro</button><br>
-<button  id="errada53" onclick="errada53()">voce tera meio litro pos é a metade de um litro</button><br>
-<button  id="errada51" onclick="errada51()">depende do tamnho do balde</button><br>
-<button  id="errada54" onclick="errada54()">n.d.a</button>
-
-
-<script>
-
-    
-    function parar5(){
-        const certa4 = document.querySelector('#certa4')
-        const errada51 = document.querySelector('#errada51')
-        const errada52 = document.querySelector('#errada52')
-        const errada53 = document.querySelector('#errada53')
-        const errada54 = document.querySelector('#errada54')
-        certa4.disabled = true
-        errada51.disabled = true
-        errada52.disabled = true
-        errada53.disabled = true
-        errada54.disabled = true
-        onclick = passar4()
-    }
-    
-    function certa4(){
-        const certa4 = document.querySelector('#certa4')
-        certa4.onclick = parar5()
-        certa4.style.background = 'green'
-        certa4.style.color = 'white'
-        
-    }
-
-    function errada51(){
-        const errada51 = document.querySelector('#errada51')
-        const certa4 = document.querySelector('#certa4')
-        errada51.onclick = parar5()
-        errada51.style.background = 'red'
-        certa4.style.background = 'green'
-        errada51.style.color = 'white'
-        certa4.style.color = 'white'
-    }
-    
-
-    function errada52(){
-        const errada52 = document.querySelector('#errada52')
-        const certa4 = document.querySelector('#certa4')
-        errada52.onclick = parar5()
-        errada52.style.background = 'red'
-        certa4.style.background = 'green'
-        errada52.style.color = 'white'
-        certa4.style.color = 'white'
-    }
-
-    function errada53(){
-        const errada53 = document.querySelector('#errada53')
-        const certa4 = document.querySelector('#certa4')
-        errada53.onclick = parar5()
-        errada53.style.background = 'red'
-        certa4.style.background = 'green'
-        errada53.style.color = 'white'
-        certa4.style.color = 'white'
-        
-    }
-
-    function errada54(){
-        const errada54 = document.querySelector('#errada54')
-        const certa4 = document.querySelector('#certa4')
-        errada54.onclick = parar5()
-        errada54.style.background = 'red'
-        certa4.style.background = 'green'
-        errada54.style.color = 'white'
-        certa4.style.color = 'white'
-        
-    }
-    
-
-    function passar4(){
-
-        setTimeout(function(){
+            <h2>Se você tem apenas uma caixa de fósforos e entra em uma sala escura com uma lâmpada a gás, um aquecedor a óleo e uma vela, qual você acenderá primeiro?</h2>
+
+            <button id="errada" class="opc" onclick="errada(this)">A Lampada</button><br>
+            <button id="certa" class="opc" onclick="certa(this)">Nenhuma das anteriores</button><br>
+            <button id="errada3" class="opc" onclick="errada(this)">A Vela</button><br>
+            <button id="errada2" class="opc" onclick="errada(this)">A lampada e a vela</button><br>
+            <button id="errada4" class="opc" onclick="errada(this)">O Aquecedor</button><br>
             
 
 
 
-        },2000)
+
+
+        </div>
 
 
 
-    }
+        <div class="per2" style="display: none;">
+
+            
+            <h2>Se um avião cai exatamente na fronteira entre os Estados Unidos e o Canadá, onde são enterrados os sobreviventes?</h2>
+
+            <button id="errada24" class="opc" onclick="errada1(this)">Alemanha</button><br>
+            <button id="errada21" class="opc" onclick="errada1(this)">Brasil</button><br>
+            <button id="errada22" class="opc" onclick="errada1(this)">Portugal</button><br>
+            <button id="certa1" class="opc" onclick="certa1(this)">Sobreviventes não são enterrados.</button><br>
+            <button id="errada23" class="opc" onclick="errada23(this)">Uruguay</button><br>
+
+
+            
+
+
+
+        </div>
+
+        <div class="per3" style="display: none;">
+
+            
+            <h2>Se você está correndo uma corrida e ultrapassa o segundo colocado, qual é a sua posição agora?</h2>
+
+            <button id="errada32" class="opc" onclick="errada2(this)">voce está terceiro lugar</button><br>
+            <button id="errada34" class="opc" onclick="errada2(this)">n.d.n</button><br>
+            <button id="errada33" class="opc" onclick="errada2(this)">Voce perdeu a corrida</button><br>
+            <button id="errada31" class="opc" onclick="errada2(this)">Voce está em primeiro lugar</button><br>
+            <button id="certa2" class="opc" onclick="certa2(this)">Você está em segundo lugar agora, já que ultrapassou o segundo colocado.</button><br>
+
+
+            
+
+
+        </div>
+
+        <div class="per4" style="display: none;">
+
+           
+            <h2>Quantos meses do ano têm 28 dias?</h2>
+
+            
+
+                <button id="errada42" class="opc" onclick="errada3(this)">
+                    apenas 11 messes do ano
+                </button><br>
+                <button id="errada43" class="opc" onclick="errada3(this)">
+                    se o ano for bissexto sao 9
+                </button><br>
+                <button id="certa3" class="opc" onclick="certa3(this)">
+                    Todos os meses têm pelo menos 28 dias.
+                </button><br>
+                <button id="errada41" class="opc" onclick="errada3(this)">
+                    Todos os meses têm pelo menos 28 dias.
+                </button><br>
+                <button id="errada44" class="opc" onclick="errada3(this)">
+                    n.d.a
+                </button>
+            
+
+
+        </div>
+
+        <div class="per5" style="display: none;">
+
+            
+            <h2>Se você tem um litro de água e despeja metade em um recipiente, quanto líquido você tem?</h2>
+
+            <button id="errada52" class="opc" onclick="errada4(this)">
+                voce tera metade de meio litro
+            </button><br>
+            <button id="errada54" class="opc" onclick="certa4(this)">
+                Você ainda tem um litro de água, pois metade de um litro é meio litro, então você ainda tem meio litro mais meio litro, totalizando um litro
+            </button><br>
+            <button id="errada53" class="opc" onclick="errada4(this)">
+                voce tera meio litro pos é a metade de um litro
+            </button><br>
+            <button id="errada51" class="opc" onclick="errada4(this)">
+                depende do tamanho do balde
+                </button><br>
+            <button id="certa4" class="opc" onclick="errada4(this)">
+                n.d.a
+            </button>
+
+
+
+        </div>
+    </div>
+    
+
+    <div class="logonoquiz2"> <img src="data:image/png;base64,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"
+        height="120px"
+        width="120px"
+        alt="Logo do Quiz">
+    </div>
 
 
 
 
-</script>
-
-
-
-</div>
-</div>
-
-
-
-
-
-
-
+<script src="js.js"></script>
 </body>
+
 </html>
