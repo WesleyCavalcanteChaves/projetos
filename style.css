@@ -83,7 +83,8 @@ h2{
     left:auto;
     top:-50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(0, 0, 0, 0.3)
+    background-color: rgba(0, 0, 0, 0.3);
+    border:solid 1px black;
     
     
 }
@@ -99,5 +100,51 @@ font-size: 100px;
 
 }
 
+.h1ind{
+    font-size:60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;
+    justify-self: center;
+    padding: auto;
+    top: 30px;
+    left:34%;
+    align-content: center;
+    width:max-content;
 
+}
 
+.h2ind{
+    font-size:xx-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;
+    padding: auto;
+    top: 100px;
+    left:44%;
+    height: 10%;
+    width:max-content;
+
+}
+
+.botaoind{
+    top: 120px;
+}
+
+.opcind{
+    font-size:x-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;
+    justify-self: center;
+    padding: auto;
+    top: 100px;
+    left:34%;
+    height: 10%;
+    align-content: center;
+    width:max-content;
+}
+
+#resu{
+
+}

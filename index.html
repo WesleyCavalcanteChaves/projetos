@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-Vindo ao QuizBerto</h1>
+
+    <h1 class="h1ind">Bem-Vindo ao QuizBerto</h1>
     
     <div class="Cate">
-    <h2>Categorias</h2>
-    <p>HTML - FuteBol - Física - Edu-Física - Raciocínio Lógico</p>
+    <h2 class="h2ind">Categorias:</h2>
+    <p class="opcind">HTML, FuteBol, Física, Edu-Física, Raciocínio Lógico</p>
     </div>
 
-    <button onclick="sortear()">Sortear</button>
+    <button class="botaoind" onclick="sortear()">Sortear</button>
     <p id="resu"></p>
     <button id="Direcionar" style="display: none;">Ir para o quiz</button>
 
@@ -38,8 +40,16 @@
         const botao = document.querySelector('#Direcionar');
         botao.style.display = 'block'
         botao.onclick = function(){ window.location.href = direcionar}
+        para()
         }
-    
+function para(){
+    const ind = document.querySelector('.botaoind')
+    const prox = document.querySelector('Direcionar')
+    prox.style.display = 'block'
+    ind.style.display = 'none'
+
+
+    }
     
 
 </script>
