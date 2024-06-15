@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 750px;
+    
 }
 
 button {
@@ -63,19 +64,58 @@ button {
 
 .logonoquiz2 {
     position:fixed;
-    left: 59%;
+    left: 63%;
     top: 2%;
 }
-h1 {
+
+.h1_html{
     font-size:100px;
     position: relative;
-    left: 41%;
+    left: 42%;
     top: -60px;
     height: 50px;
-    width: 30px;
+    width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
+.h1_edu-fisica{
+    font-size:100px;
+    position: relative;
+    left: 35%;
+    top: -60px;
+    height: 50px;
+    width: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.h1_futebol{
+    font-size:100px;
+    position: relative;
+    left: 40%;
+    top: -60px;
+    height: 50px;
+    width: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.h1_logica{
+
+    font-size:100px;
+    position: relative;
+    left: 40%;
+    top: -60px;
+    height: 50px;
+    width: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.h2_logica_per1{
+    width: 1500px;
+}
+    
+
 
 h2{
     font-size:30px;
@@ -85,6 +125,7 @@ h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
     border:solid 1px black;
+    width: max-content;
     
     
 }
@@ -101,50 +142,64 @@ font-size: 100px;
 }
 
 .h1ind{
-    font-size:60px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    position: relative;
-    justify-self: center;
-    padding: auto;
+    position: fixed;
     top: 30px;
-    left:34%;
-    align-content: center;
-    width:max-content;
+    left:25%;
+    font-size: 40px;
 
 }
 
 .h2ind{
-    font-size:xx-large;
+    font-size:50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     position: relative;
     padding: auto;
-    top: 100px;
-    left:44%;
+    top: 200px;
+    left:41%;
     height: 10%;
-    width:max-content;
+    
 
-}
-
-.botaoind{
-    top: 120px;
-}
-
-.opcind{
-    font-size:x-large;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    position: relative;
-    justify-self: center;
-    padding: auto;
-    top: 100px;
-    left:34%;
-    height: 10%;
-    align-content: center;
-    width:max-content;
 }
 
 #resu{
+    position: relative;
+    left: 55.5%;
+    top: -130px;
+    font-size: 60px;
+    width: max-content;
+    height: max-content;
+}
 
+
+
+.botaoind{
+    position: relative;
+    top: 280px;
+    left: -20px;
+}
+
+.opcind{
+    font-size:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    position: relative;
+    justify-self: center;
+    padding: auto;
+    top: 250px;
+    left:30%;
+    height: 10%;
+    align-content: center;
+    width:max-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px black;
+}
+
+
+#Direcionar{
+    position: relative;
+    top: 280px;
+    left: -20px;
 }

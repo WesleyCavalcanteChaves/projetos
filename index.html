@@ -6,18 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <h1 class="h1ind">Bem-Vindo ao QuizBerto</h1>
+<body style=" background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-angustiado-de-design-plano_23-2150525327.jpg);">
+    <div class="h1ind">
+    <h1>Bem-Vindo ao QuizBerto</h1>
+</div>
     
-    <div class="Cate">
-    <h2 class="h2ind">Categorias:</h2>
-    <p class="opcind">HTML, FuteBol, Física, Edu-Física, Raciocínio Lógico</p>
-    </div>
+    <h2 class="h2ind">Categoria:</h2>
+    <h3 class="opcind">HTML, FuteBol, Física, Edu-Física, Raciocínio Lógico</h3>
+    
 
     <button class="botaoind" onclick="sortear()">Sortear</button>
-    <p id="resu"></p>
     <button id="Direcionar" style="display: none;">Ir para o quiz</button>
+    <h3 id="resu"></h3>
 
 <script>
 
@@ -44,7 +44,7 @@
         }
 function para(){
     const ind = document.querySelector('.botaoind')
-    const prox = document.querySelector('Direcionar')
+    const prox = document.querySelector('#Direcionar')
     prox.style.display = 'block'
     ind.style.display = 'none'
 

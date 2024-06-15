@@ -295,6 +295,14 @@ function passar4() {
     per5.style.display = 'none'
     pontua.style.display = 'block'
     document.querySelector('#pontu').innerHTML = pontuacao
+        setTimeout(function(){
+            window.location.href = 'index.html'
+
+
+
+
+
+        },3000)
     
     
     
