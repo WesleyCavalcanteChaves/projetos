@@ -75,7 +75,7 @@ button {
 .logonoquiz3{
     position:fixed;
     left: 55%;
-    top: 2%;
+    top: 4%;
     border-radius: 40px;
     
     
@@ -170,9 +170,12 @@ font-size: 100px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     position: fixed;
-    top: 30px;
+    top: 50px;
     left:25%;
-    font-size: 40px;
+    font-size: 80px;
+    width: max-content;
+    
+    height: max-content;
 
 }
 
@@ -202,13 +205,28 @@ font-size: 100px;
 
 .botaoind{
     position: relative;
-    top: 350px;
+    top: 300px;
     left: -20px;
     font-size: 30px;
 }
+.botaoind:hover{
+    transform: scale(1.1);
+}
+
+.botaoind_novamente:hover{
+    transform: scale(1.1);
+
+}
+.botaoind_novamente:active{
+    background-color: green;
+}
+
+
+
+
 .botaoind_novamente{
     position: relative;
-    top: 470px;
+    top: 410px;
     left: -20px;
     font-size: 30px;
 }
@@ -220,7 +238,7 @@ font-size: 100px;
     position: relative;
     justify-self: center;
     padding: auto;
-    top: 110px;
+    top: 100px;
     left:30%;
     align-content: center;
     width:max-content;
@@ -231,15 +249,18 @@ font-size: 100px;
 
 #Direcionar{
     position: relative;
-    top: 245px;
+    top: 195px;
     left: -20px;
     font-size: 30px;
+}
+#Direcionar:hover{
+    transform: scale(1.1);
 }
 
 .descricao{
     position: relative;
     left: 40%;
-    top: 200px;
+    top: 180px;
     height: max-content;
     width: max-content;
     font-size: 30px;
@@ -250,4 +271,68 @@ font-size: 100px;
     
 }
 
+#menu{
+    text-align: center;
+    background-color:rgba(0, 0, 0);
+    padding: 5px;
+    
+}
+#menu li{
+    display: inline;
+    padding: 50px;
+    font-size: 40px;
+}
+#menu li a{
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+#menu li a:hover{
+    
+    background-color: white;
+    color: black;    
+}
 
+.voltar button{
+    position: fixed;
+    top: 20px;
+    left: 90%;
+    padding: 10px;
+    width: 150px;
+    
+}
+.voltar button:hover{
+    background-color: rgb(204, 76, 76);
+    transform: scale(1.1);
+}
+
+.tabela{
+    font-size: 50px;
+    position: relative;
+    left: 26%;
+    top: 50px;
+    background-color: rgba(15, 250, 121, 0.2);
+}
+.h1sobre{
+    font-size: 70px;
+    position: relative;
+    left: 24%;
+}
+
+.htmltabela{
+    background-color: orange;
+}
+.csstabela{
+    background-color: rgb(5, 151, 235);
+
+}
+.javatabela{
+    background-color: yellow;
+}
+.h2sobre{
+    position: relative;
+    left: 15%;
+    top: 100px;
+}

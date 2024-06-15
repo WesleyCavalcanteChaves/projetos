@@ -1,4 +1,6 @@
 
+
+
 function mostra(){
     console.log(pontuacao)
 }
@@ -295,20 +297,20 @@ function passar4() {
     per5.style.display = 'none'
     pontua.style.display = 'block'
     document.querySelector('#pontu').innerHTML = pontuacao
+    if(pontuacao <= 20){
+        document.querySelector('.status').innerHTML = 'Dá pra melhorar '
+    }
+    if(pontuacao >= 20 && pontuacao <= 35){
+        document.querySelector('.status').innerHTML = 'Ainda dá pra melhorar'
+    }
+    if(pontuacao >= 40){
+        document.querySelector('.status').innerHTML = 'Você sabe muito!'
+    }
         setTimeout(function(){
             window.location.href = 'index.html'
 
-
-
-
-
         },3000)
     
-    
-    
-
-
-
 
     }, 1000)
 
@@ -316,9 +318,12 @@ function passar4() {
 
 }
 
+function voltarmenu(){
+    pontuacao = 0
+    window.location.href = 'index.html'
 
 
-
+}
 
 
 
