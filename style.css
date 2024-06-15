@@ -97,7 +97,7 @@ button {
     position: relative;
     left: 35%;
     top: -60px;
-    height: 50px;
+    height: 90px;
     width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -120,7 +120,7 @@ button {
     position: relative;
     left: 40%;
     top: -60px;
-    height: 80px;
+    height: 90px;
     width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -131,7 +131,7 @@ button {
     position: relative;
     left: 40%;
     top: -55px;
-    height: 50px;
+    height: 100px;
     width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -234,6 +234,20 @@ font-size: 100px;
     top: 245px;
     left: -20px;
     font-size: 30px;
+}
+
+.descricao{
+    position: relative;
+    left: 40%;
+    top: 200px;
+    height: max-content;
+    width: max-content;
+    font-size: 30px;
+    background-color: rgba(28, 167, 1, 0.2);
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    
 }
 
 
