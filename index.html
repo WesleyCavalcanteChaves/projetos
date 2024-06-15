@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style=" background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-angustiado-de-design-plano_23-2150525327.jpg);">
+  
     <div class="h1ind">
     <h1>Bem-Vindo ao QuizBerto</h1>
 </div>
@@ -16,8 +17,10 @@
     
 
     <button class="botaoind" onclick="sortear()">Sortear</button>
+    <button class="botaoind_novamente" style="display: none;" onclick="sortear()">Sortear novamente</button>
     <button id="Direcionar" style="display: none;">Ir para o quiz</button>
     <h3 id="resu"></h3>
+
 
 <script>
 
@@ -41,6 +44,8 @@
         botao.style.display = 'block'
         botao.onclick = function(){ window.location.href = direcionar}
         para()
+        const novamente = document.querySelector('.botaoind_novamente')
+        novamente.style.display = 'block'
         }
 function para(){
     const ind = document.querySelector('.botaoind')
