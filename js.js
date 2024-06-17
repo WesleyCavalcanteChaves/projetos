@@ -376,18 +376,17 @@ function voltarmenu(){
 
 }
 
+const bloco = document.querySelector('.bloco')
 
+function pulo(){
+    if(bloco.classList != 'pular'){
+    bloco.classList.add('pular')}
 
-
-
-
-
-
-
-
-
-
-
+    setTimeout(function(){
+    bloco.classList.remove('pular')
+    
+    },1200)
+}
 
 
 
